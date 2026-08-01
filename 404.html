@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OneSocial — One World Labs</title>
+<meta name="description" content="Your professional network">
+<!--
+  INTERIM LANDING FOR onesocial.oneworldlabs.ai
+  =========================================================================
+  This repo exists to CLAIM THE HOSTNAME. GitHub Pages matches an incoming host against the CNAME
+  file of a repo owned by the account, so without this repo the DNS record resolves but no
+  certificate is ever issued and the address simply fails.
+
+  Right now it forwards to where OneSocial actually lives today. That is deliberate and temporary:
+  OneSocial's build is compiled with a sub-path base, so its asset URLs would 404 if the same files
+  were served from this domain's root.
+
+  TO MAKE THIS THE REAL HOME (do this in OneSocial's own thread):
+    1. Rebuild OneSocial with the base path set to "/" instead of its current sub-path.
+    2. Replace everything in this repo with that build.
+    3. Keep the CNAME file exactly as it is.
+    4. Copy index.html to 404.html so client-side routes survive a hard refresh.
+  Nothing else changes — DNS and Pages are already correct.
+
+  OneJob has already been through this; frazier56/onejob-app is the worked example.
+-->
+<link rel="canonical" href="https://onesocial.ai/">
+<meta http-equiv="refresh" content="0; url=https://onesocial.ai/">
+<script>location.replace("https://onesocial.ai/" + location.hash);</script>
+<style>
+  html,body{height:100%;margin:0}
+  body{display:grid;place-items:center;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+       color:#0B0F1A;background:radial-gradient(60% 44% at 20% 8%, #15C2B21F, transparent 68%), #FAFAF8}
+  .w{text-align:center;padding:28px}
+  .m{width:56px;height:56px;border-radius:16px;margin:0 auto 14px;background:linear-gradient(150deg, #15C2B2, #15C2B2bb);
+     box-shadow:0 12px 28px -14px #15C2B2}
+  h1{font-size:19px;margin:0 0 4px}
+  p{margin:0 0 16px;opacity:.6;font-size:13px}
+  a{display:inline-block;padding:10px 18px;border-radius:99px;background:#332C26;color:#fff;
+    text-decoration:none;font-weight:700;font-size:13px}
+</style></head>
+<body><div class="w">
+  <div class="m"></div>
+  <h1>OneSocial</h1>
+  <p>Your professional network<br>Taking you there now…</p>
+  <a href="https://onesocial.ai/">Continue to OneSocial</a>
+</div></body></html>
